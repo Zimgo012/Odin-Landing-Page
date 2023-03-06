@@ -1,0 +1,167 @@
+/* Globar Color */
+:root{
+    --hero-and-footer: #1F2937;
+    --hero-main-text: #f9faf8;
+    --hero-link-and-seconday-text: #e5e7eb;
+    --header-logo-text: #f9faf8;
+    --button-color: #3882f6;
+    --info-header: #1f2937;
+    --quote-section-color: #e5e7eb;
+    --quote-text-color: #1f2937;
+}
+
+html{
+    font-family: Roboto, sans-serif;
+}
+
+/* outlines*/
+
+div.nav{
+    outline: 2px solid red;
+}
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Hero */
+#hero{
+    background-color: var(--hero-and-footer);
+    padding-right: 200px;
+    padding-left: 200px;
+    height: auto;
+    
+}
+
+#navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink{
+    margin-right: 200px;
+}
+
+nav p{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--hero-main-text);
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--hero-main-text);
+}
+
+.lefthero p{
+    font-size: 18px;
+    color: var(--hero-link-and-seconday-text)
+}
+
+.lefthero h1{
+    color: var(--hero-main-text);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.rightherocontent{
+    background-color: gray;
+    /* height: 20px;
+    weight: 20px; */
+}
+
+div.container-main{
+    outline: 2px solid gold;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div.lefthero{
+    outline: 2px solid slateblue;
+    flex: 1 1 70%;
+    min-width: 1ch;
+}
+
+
+
+div.righthero{
+    outline: 2px solid salmon;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+
+/* section 2 */
+#section2{
+    padding-right: 200px;
+    padding-left: 200px;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#section2 h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--info-header);
+}
+
+div.container-wrapper{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 30px;
+    /* outline: 2px solid saddlebrown; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+div.box-container{
+    /* outline: 2px solid chartreuse; */
+    max-width: 107px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.box-container p{
+    font-size: 12px;
+}
+div.box{
+    border: 2px solid var(--button-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+
+}
+
+/* section 3 */
+#section3{
+    background-color: var(--quote-section-color);
+    margin-top: 200px;
+}
+
+/* section 4 */
+
+/* footer */
+#footer{
+    background-color: var(--hero-and-footer);
+}
