@@ -12,6 +12,7 @@
 
 html{
     font-family: Roboto, sans-serif;
+    height: 100%;
 }
 
 /* outlines*/
@@ -20,7 +21,11 @@ div.nav{
     outline: 2px solid red;
 }
 
-
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%
+}
 
 
 *{
@@ -154,14 +159,44 @@ div.box{
 }
 
 /* section 3 */
-#section3{
+blockquote{
     background-color: var(--quote-section-color);
-    margin-top: 200px;
+    margin-top: 20px;
+    padding: 50px 300px 50px 300px;
+    align-items: center;
+
+}
+
+.blockquote-text{
+    font-style: italic;
+    font-size: 36px;
+}
+.blockquote-text:not(:last-child){
+    margin: 5px;
+}
+
+.blockquote-text.blockquote-credit{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
 }
 
 /* section 4 */
 
+
 /* footer */
-#footer{
+footer{
     background-color: var(--hero-and-footer);
+    margin-top: auto;
+}
+
+
+#footer-section{
+    color: var(--header-logo-text);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
 }
