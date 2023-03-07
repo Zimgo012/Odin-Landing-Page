@@ -16,11 +16,6 @@ html{
 }
 
 /* outlines*/
-
-div.nav{
-    outline: 2px solid red;
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -36,7 +31,7 @@ body{
 /* Hero */
 #hero{
     background-color: var(--hero-and-footer);
-    padding-right: 200px;
+    padding-right: 100px;
     padding-left: 200px;
     height: auto;
     
@@ -86,31 +81,50 @@ nav > ul > li > a{
 
 .rightherocontent{
     background-color: gray;
-    /* height: 20px;
-    weight: 20px; */
+    color: var(--header-logo-text);
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-hero{ 
+    background-color: var(--button-color);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--button-color);
+    border-radius: 10px;
+    margin-top: 20px;
+   
 }
 
 div.container-main{
-    outline: 2px solid gold;
+    /* outline: 2px solid gold; */
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-evenly;
+  
 }
 
 div.lefthero{
-    outline: 2px solid slateblue;
-    flex: 1 1 70%;
-    min-width: 1ch;
+    /* outline: 2px solid slateblue; */
+    display: block;
+    text-align: left;
+    width: 500px;
+    align-self: center;
 }
 
 
 
 div.righthero{
-    outline: 2px solid salmon;
-    align-items: center;
+    /* outline: 2px solid salmon; */
     text-align: center;
-    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -183,6 +197,33 @@ blockquote{
 }
 
 /* section 4 */
+#section4{
+    padding: 100px 400px 100px 400px;
+    color: var(--header-logo-text)
+}
+div.container-section4{
+    background-color: #3882f6;
+    padding: 0px 100px 0px 100px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+   
+}
+
+.signup-button{
+  background-color: var(--button-color);
+  border: 2px solid var(--header-logo-text);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+
 
 
 /* footer */
